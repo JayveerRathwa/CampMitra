@@ -22,9 +22,18 @@ const seedDB = async() =>{
             author: '66917be661aa45784e5b0f2a',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: `https://picsum.photos/400?random=${Math.random()}`,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nam sunt quod? Quisquam rerum amet dolor quidem, qui labore voluptatibus nulla facilis iste officia et dicta fugit dolorum enim cumque!',
-            price
+            price,
+            images: [
+                {
+                    url: 'https://res.cloudinary.com/dgyy1aiqz/image/upload/v1720954493/CampingMitra/htlh6xtsum1t1d8x2hrh.png',
+                    filename: 'CampingMitra/ifegw2kbvlqlthqrcv1v'
+                },
+                {
+                    url: 'https://res.cloudinary.com/dgyy1aiqz/image/upload/v1720954493/CampingMitra/htlh6xtsum1t1d8x2hrh.png',
+                    filename: 'CampingMitra/ifegw2kbvlqlthqrcv1v'
+                }
+            ]
         })
         await camp.save();
     }
