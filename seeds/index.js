@@ -24,6 +24,13 @@ const seedDB = async() =>{
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nam sunt quod? Quisquam rerum amet dolor quidem, qui labore voluptatibus nulla facilis iste officia et dicta fugit dolorum enim cumque!',
             price,
+            geometry: {
+                type: "Point",
+                coordinates: [
+                    cities[random1000].longitude,
+                    cities[random1000].latitude
+                ]
+            },
             images: [
                 {
                     url: 'https://res.cloudinary.com/dgyy1aiqz/image/upload/v1720954493/CampingMitra/htlh6xtsum1t1d8x2hrh.png',
